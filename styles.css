@@ -1,0 +1,55 @@
+
+h1 {
+    color:coral; 
+}
+
+#HomeBtn,#CatogoryBtn,#AboutUsBtn {
+    text-align: left;
+    margin-top: 20px;
+}
+#LoginBtn, #SignupBtn {
+    float: right;
+    margin-top: 20px;
+
+}
+#loginForm, #signupForm {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+input[type="button"] {
+    background-color: #4CAF50; 
+    text-align: center;
+    color: white; 
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+#items {
+    background-color:#4CAF50; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+#sweets, #Spices {
+    background-color:black; 
+    padding: 10px;
+    color:white;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+ul {
+    list-style-type: square; 
+    padding-left: 20px;
+}
+
+#sweets ul, #Spices ul {
+    list-style-type: disc; 
+}
+
