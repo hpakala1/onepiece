@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>INDIAN MART</title>
+</head>
+<body>
+    <h1>Welcome to Indian Mart</h1>
+    <div id="buttons">
+        <input type="button" id="CatogoryBtn" onclick="showCatagory()" value="Catogory">
+        <input type="button" id="AboutUsBtn" onclick="showABOUTUS()" value="About Us">
+        <input type="button" id="HomeBtn" onclick="showHomego()" value="Home">
+        <input type="button" id="LoginBtn" onclick="showLoginForm()" value="Login">
+        <input type="button" id="SignupBtn" onclick="showSignupForm()" value="Signup">
+    </div>
+
+    <div id="Catagory" style="display: none;">
+        <h1>Catagory</h1>
+        <p>
+        <ul>
+            <li>Sweets</li>
+            <li>Spices</li>
+            <li>fooditems</li>
+        </ul>
+        </p>
+    
+    </div>
+    <div id="ABOUTUS" style="display: none;">
+     <h1>AboutUs</h1>
+     <p>This is  a idea bring Indian Mart to USA </p>
+    </div>
+    <div id="Homego" style="display: none;">
+        
+    </div>
+
+    <div id="loginForm" style="display: none;">
+        <h1>Login</h1>
+        <form>
+            <label for="loginUserID">User ID</label>
+            <input type="text" id="loginUserID" name="loginUserID" required><br><br>
+
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" name="loginPassword" required><br><br>
+
+            <input type="button" onclick="login()" value="Login">
+        </form>
+    </div>
+
+    <div id="signupForm" style="display: none;">
+        <h1>Signup</h1>
+        <form>
+            <label for="signupFirstName">First Name</label>
+            <input type="text" id="signupFirstName" name="signupFirstName" required><br><br>
+
+            <label for="signupLastName">Last Name</label>
+            <input type="text" id="signupLastName" name="signupLastName" required><br><br>
+
+            <label for="signupUserID">User ID</label>
+            <input type="text" id="signupUserID" name="signupUserID" required><br><br>
+
+            <label for="signupPassword">Password</label>
+            <input type="password" id="signupPassword" name="signupPassword" required><br><br>
+
+            <input type="button" onclick="signup()" value="Signup">
+        </form>
+    </div>
+    <div id="items" style="display: none;">
+        <h1>Items</h1>
+    
+        <div id="sweets">
+            <h1><a href="#">Sweets</a></h1>
+        </div>
+            <div id="SweetsList">
+                <ul>
+                 <li>jammmu box</li>
+                 <li>Rasagula</li>
+                 <li>laddu</li>
+                 <li>kalakand</li>
+                 <li>allmix</li>
+                </ul>
+            </div>
+            
+        
+        <div id="Spices">
+
+            <h1><a href="#">SPICES</a></h1>
+        </div>
+        <div id="SpicesList">
+            <ul>
+             <li>tumeric</li>
+             <li>tamarind</li>
+             <li>masalas</li>
+             <li>rice</li>
+             <li>daniyal power</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+
+    <script>
+        function showCatagory(){
+            document.getElementById("buttons").style.display = "none";
+            document.getElementById("Catagory").style.display = "block";
+
+        }
+        function showABOUTUS(){
+            document.getElementById("buttons").style.display = "none";
+            document.getElementById("ABOUTUS").style.display = "block";
+
+        }
+        function showHomego(){
+            document.getElementById("buttons").style.display = "none";
+            document.getElementById("Homego").style.display = "block";
+
+        }
+
+        function showLoginForm() {
+            document.getElementById("buttons").style.display = "none";
+            document.getElementById("loginForm").style.display = "block";
+            
+        }
+
+        function showSignupForm() {
+            document.getElementById("buttons").style.display = "none";
+            document.getElementById("signupForm").style.display = "block";
+        }
+
+        function login() {
+            document.getElementById("loginForm").style.display = "none";
+            document.getElementById("items").style.display = "block";
+           
+           
+            
+            
+        }
+
+        function signup() {
+            
+            document.getElementById("signupForm").style.display = "none";
+            document.getElementById("loginForm").style.display = "block";
+            document.getElementById("items").style.display = "none";
+            
+        }
+       
+
+
+        
+    </script>
+</body>
+</html>
+
